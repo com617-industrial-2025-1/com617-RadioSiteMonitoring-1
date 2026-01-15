@@ -1,2 +1,10 @@
 # com617-RadioSiteMonitoring-1
-Radio Site Monitoring Project
+
+## Introduction
+
+See [Project Brief](../main/docs/ProjectBrief.md)
+
+
+## Project Organisation
+
+[workup](../main/workup) contains experimental work and examples not committed to the main project.
