@@ -1,6 +1,6 @@
 # Project Students 2025
 
-|              |                                                                      |                                                                     |          |          |                   |
+|  student id  |    name                                                              | course                                                              |          |          |  github id        |
 |--------------|----------------------------------------------------------------------|---------------------------------------------------------------------|----------|----------|-------------------|
 |              |  Radio site monitoring Group 2                                       |                                                                     |          |          |                   |
 | ID_16069803  |  Okai_Owusu                                                          |  BSc (Hons) Cyber Security Management FT 4 Year SEP                 |  Group 2 |  Tuesday |  m80kot           |
