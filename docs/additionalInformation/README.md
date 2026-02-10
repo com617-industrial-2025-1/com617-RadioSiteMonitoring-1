@@ -6,7 +6,7 @@ Some MIBs for devices I'm interested in monitoring.
 
 ## Pro Television
 
-![alt text](../images/ProTelevision_Tech_250_85_70_s.jpg "Figure ProTelevision_Tech_250_85_70_s.jpg")
+![alt text](../additionalInformation/images/ProTelevision_Tech_250_85_70_s.jpg "Figure ProTelevision_Tech_250_85_70_s.jpg")
 
 https://www.thebroadcastbridge.com/companies/entry/805/protelevision-technologies
 
@@ -20,15 +20,15 @@ https://www.radioworld.com/news-and-business/elenos-group-acquired-by-italys-dac
 
 Two mibs for a Pro-Television PT3070.  The MIB downloads are labelled as "general mib" and "system mib", so I assume one covers all Pro-Television devices, and one has the extra bits for the PT7030.
 
-[Pro-Television](../Pro-Televison)
+[Pro-Television](../additionalInformation/Pro-Televison)
 
 ## Tredess
 
 https://www.tredess.com/en
 
-![alt text](../images/tredess-logo.png "Figuretredess-logo.png")
+![alt text](../additionalInformation/images/tredess-logo.png "Figuretredess-logo.png")
 
-[Tredess](../Tredess)
+[Tredess](../additionalInformation/Tredess)
 
 https://www.tredess.com/en/fourth-series-low-power 
 
