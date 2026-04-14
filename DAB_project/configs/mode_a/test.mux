@@ -1,0 +1,128 @@
+; Solent_Test A  —  MODE A: Home / no hardware
+; CHANGED: mux output switched from EDI UDP to EDI TCP to avoid
+; a bug in ODR-DabMod next branch that rejects UDP host 0.0.0.0
+; as a multicast address. TCP is simpler and more reliable in Docker.
+
+general {
+    dabmode 1
+    nbframes 0
+    syslog true
+    tist true
+    managementport 12720
+}
+
+remotecontrol {
+    telnetport 12721
+}
+
+ensemble {
+    id 0xc1d6
+    ecc 0xe1
+    local-time-offset auto
+    reconfig-counter hash
+    label "Solent Uni"
+    shortlabel "Slnt Uni"
+}
+
+services {
+    srv-01 {
+        id 0xc3ee
+        ecc 0xe1
+        label "Test Service 1"
+        shortlabel "Test 1"
+        pty 10
+        pty-sd static
+        language 0x09
+    }
+    srv-02 {
+        id 0xc1c5
+        ecc 0xe1
+        label "Test Service 2"
+        shortlabel "Test 2"
+        pty 10
+        pty-sd static
+        language 0x09
+    }
+    srv-03 {
+        id 0xc144
+        ecc 0xe1
+        label "Test Service 3"
+        shortlabel "Test 3"
+        pty 13
+        pty-sd static
+        language 0x09
+    }
+}
+
+subchannels {
+    sub-01 {
+        type dabplus
+        bitrate 64
+        id 1
+        protection 3
+        inputproto edi
+        inputuri "tcp://:10001"
+        buffer-management prebuffering
+        buffer 40
+        prebuffering 20
+    }
+    sub-02 {
+        type dabplus
+        bitrate 64
+        id 2
+        protection 3
+        inputproto edi
+        inputuri "tcp://:10002"
+        buffer-management prebuffering
+        buffer 40
+        prebuffering 20
+    }
+    sub-03 {
+        type dabplus
+        bitrate 64
+        id 3
+        protection 3
+        inputproto edi
+        inputuri "tcp://:10003"
+        buffer-management prebuffering
+        buffer 80
+        prebuffering 40
+    }
+}
+
+components {
+    comp-01 {
+        service srv-01
+        subchannel sub-01
+        user-applications {
+            userapp "slideshow"
+        }
+    }
+    comp-02 {
+        service srv-02
+        subchannel sub-02
+        user-applications {
+            userapp "slideshow"
+        }
+    }
+    comp-03 {
+        service srv-03
+        subchannel sub-03
+        user-applications {
+            userapp "slideshow"
+        }
+    }
+}
+
+outputs {
+    edi {
+        destinations {
+            edi_tcp {
+                protocol tcp
+                listenport 13000
+            }
+        }
+    }
+
+    throttle "simul://"
+}

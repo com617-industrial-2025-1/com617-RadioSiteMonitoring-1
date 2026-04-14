@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-03-20T23:33:54.613967+00:00",
+  "source": "dab_mod",
+  "stats": {
+    "num_modulator_restarts": "0",
+    "most_recent_edi_decoded": "1774049635",
+    "edi_source": "tcp://mux:13000",
+    "running_since": "1774045604",
+    "ensemble_label": "Solent Uni",
+    "ensemble_eid": "49622",
+    "num_services": "3",
+    "digital_gain": "0.800000",
+    "gainmode": "var",
+    "iq_samplerate": "2048000",
+    "tist_offset": "0"
+  }
+}
