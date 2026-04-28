@@ -65,40 +65,40 @@ services:
 
   # see https://www.baeldung.com/spring-properties-file-outside-jar
   # https://docs.spring.io/spring-boot/reference/features/external-config.html
- # kuwaiba:
+  kuwaiba:
  #    image: ${DOCKER_REGISTRY:-docker.io}/neotropic/kuwaiba:${KUWAIBA_VERSION:-v2.1-nightly}
-#    image: onms-integration/kuwaiba
- #   build: ./container-fs/kuwaiba/
-  #  container_name: kuwaiba
- #   hostname: kuwaiba
- #   environment:
- #      SPRING_CONFIG_ADDITIONAL-LOCATION : optional:file:/custom-config/
+    image: onms-integration/kuwaiba
+    build: ./container-fs/kuwaiba/
+    container_name: kuwaiba
+    hostname: kuwaiba
+    environment:
+       SPRING_CONFIG_ADDITIONAL-LOCATION : optional:file:/custom-config/
 
 #      SPRING_CONFIG_NAME : 
 #      SPRING_CONFIG_LOCATION : file:///Users/home/config
 #      URL_DATA: https://sourceforge.net/projects/kuwaiba/files/Version%202.x/kuwaiba_server_2.1.1_stable.zip
-#    volumes:
- #     - data-kuwaiba:/data
- #     - ./container-fs/kuwaiba/start.sh:/start.sh
- #     - ./container-fs/kuwaiba/data-overlay:/data-overlay
- #     - ./container-fs/kuwaiba/data-zip:/data-zip
- #     - ./container-fs/kuwaiba/external-data:/external-data
- #     - ./container-fs/kuwaiba/custom-config:/custom-config
- #   ports:
- #     - "8080:8080"
- #     - "8081:8081"
+    volumes:
+      - data-kuwaiba:/data
+      - ./container-fs/kuwaiba/start.sh:/start.sh
+      - ./container-fs/kuwaiba/data-overlay:/data-overlay
+      - ./container-fs/kuwaiba/data-zip:/data-zip
+      - ./container-fs/kuwaiba/external-data:/external-data
+      - ./container-fs/kuwaiba/custom-config:/custom-config
+    ports:
+      - "8080:8080"
+      - "8081:8081"
 
     # To combine stderr and stdout into the stdout stream, we append this to a command: 2>&1
     # command: sh -c "java -jar /opt/programs/kuwaiba_server_2.1.1-stable.jar > /data/logs/kuwaiba_$(date +%Y%m%d_%H%M%S).log 2>&1"
-#    command: sh /start.sh
- #   healthcheck:
- #     test: ["CMD", "curl", "-f", "-I", "http://localhost:8080/kuwaiba/"]
-  #    interval: 30s
- #     timeout: 5s
-#      retries: 1
-  #  networks:
- #     kuwaiba-net:
-  #      ipv4_address: 172.30.0.55
+    command: sh /start.sh
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-I", "http://localhost:8080/kuwaiba/"]
+      interval: 30s
+      timeout: 5s
+      retries: 1
+    networks:
+      kuwaiba-net:
+        ipv4_address: 172.30.0.55
 
   pris-kuwaiba:
     container_name: pris-kuwaiba

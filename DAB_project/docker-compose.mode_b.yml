@@ -1,0 +1,49 @@
+networks:
+  dab_net:
+    driver: bridge
+
+services:
+
+  encoder:
+    build:
+      context: ./encoder
+    container_name: dab_encoder
+    networks:
+      - dab_net
+    restart: unless-stopped
+    depends_on:
+      - mux
+    command: sh -c "odr-audioenc -v http://sc6.radiocaroline.net:8040 -c 2 -r 32000 -b 64 -e tcp://mux:10001 & sleep 1 && odr-audioenc -v http://studio.theflashonair.co.uk:8000/1.mp3 -c 2 -r 32000 -b 64 -e tcp://mux:10002 & sleep 1 && odr-audioenc -v http://s2.xrad.io:8522 -c 1 -r 32000 -b 64 -e tcp://mux:10003 & wait"
+
+  mux:
+    build:
+      context: ./mux
+    container_name: dab_mux
+    networks:
+      - dab_net
+    restart: unless-stopped
+    volumes:
+      - ./configs/mode_b/test.mux:/configs/test.mux:ro
+    command: odr-dabmux /configs/test.mux
+    ports:
+      - "127.0.0.1:12720:12720"
+      - "127.0.0.1:12721:12721"
+
+  mod:
+    build:
+      context: ./mod
+    container_name: dab_mod
+    networks:
+      - dab_net
+    restart: unless-stopped
+    volumes:
+      - ./configs/mode_b/ports25_mod.ini:/configs/ports25_mod.ini:ro
+    command: odr-dabmod -C /configs/ports25_mod.ini
+    ports:
+      - "127.0.0.1:2120:2120"
+      - "127.0.0.1:9400:9400"
+    privileged: true
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    depends_on:
+      - mux
