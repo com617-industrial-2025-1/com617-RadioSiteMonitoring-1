@@ -1,0 +1,4418 @@
+<events xmlns="http://xmlns.opennms.org/xsd/eventconf">
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>3</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifModulatorAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifModulatorAlarm</event-label>
+      <descr>
+&lt;p>Modulator Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifModulatorAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>5</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryAlarm</event-label>
+      <descr>
+&lt;p>Primary Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryAlarm</event-label>
+      <descr>
+&lt;p>Secondary Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>7</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSFNAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSFNAlarm</event-label>
+      <descr>
+&lt;p>SFN Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSFNAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>8</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockAlarm</event-label>
+      <descr>
+&lt;p>Reference Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>9</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRFAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRFAlarm</event-label>
+      <descr>
+&lt;p>RF Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRFAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>10</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifGNSSAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifGNSSAlarm</event-label>
+      <descr>
+&lt;p>GNSS Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifGNSSAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>12</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifEDIAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifEDIAlarm</event-label>
+      <descr>
+&lt;p>EDI Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifEDIAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>13</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalAlarm</event-label>
+      <descr>
+&lt;p>External Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>14</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorAlarm</event-label>
+      <descr>
+&lt;p>HW Monitor Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>15</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommAlarm</event-label>
+      <descr>
+&lt;p>Communications Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>16</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifETIAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifETIAlarm</event-label>
+      <descr>
+&lt;p>ETI Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifETIAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>18</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalAlarm</event-label>
+      <descr>
+&lt;p>Internal Alarms&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>21</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimarySyncLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimarySyncLossAlarm</event-label>
+      <descr>
+&lt;p>Primary Sync Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimarySyncLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>22</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimarypktcrcAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimarypktcrcAlarm</event-label>
+      <descr>
+&lt;p>Primary PKT Corr by CRC&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimarypktcrcAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>23</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryBROOPRAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryBROOPRAlarm</event-label>
+      <descr>
+&lt;p>Primary Bitrate OOPR&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryBROOPRAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>24</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryCRCHeaderAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryCRCHeaderAlarm</event-label>
+      <descr>
+&lt;p>Primary CRC Header&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryCRCHeaderAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>25</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryCRCFrameAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryCRCFrameAlarm</event-label>
+      <descr>
+&lt;p>Primary CRC Frame&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryCRCFrameAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>26</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryCRCMNSCAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryCRCMNSCAlarm</event-label>
+      <descr>
+&lt;p>Primary CRC MNSC&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryCRCMNSCAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>27</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryMNSCAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryMNSCAlarm</event-label>
+      <descr>
+&lt;p>Primary MNSC&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryMNSCAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>28</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryTimestampAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryTimestampAlarm</event-label>
+      <descr>
+&lt;p>Primary Timestamp&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryTimestampAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>29</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryMNSCADDRAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryMNSCADDRAlarm</event-label>
+      <descr>
+&lt;p>Primary MNSC Address&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryMNSCADDRAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>30</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryTISTSyncAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryTISTSyncAlarm</event-label>
+      <descr>
+&lt;p>Primary TIST Sync&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryTISTSyncAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>31</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifPrimaryTISTHoldoverAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifPrimaryTISTHoldoverAlarm</event-label>
+      <descr>
+&lt;p>Primary TIST Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifPrimaryTISTHoldoverAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>32</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondarySyncLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondarySyncLossAlarm</event-label>
+      <descr>
+&lt;p>Secondary Sync Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondarySyncLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>33</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondarypktcrcAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondarypktcrcAlarm</event-label>
+      <descr>
+&lt;p>Secondary PKT Corr by CRC&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondarypktcrcAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>34</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryBROOPRAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryBROOPRAlarm</event-label>
+      <descr>
+&lt;p>Secondary Bitrate OOPR&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryBROOPRAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>35</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryCRCHeaderAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryCRCHeaderAlarm</event-label>
+      <descr>
+&lt;p>Secondary CRC Header&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryCRCHeaderAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>36</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryCRCFrameAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryCRCFrameAlarm</event-label>
+      <descr>
+&lt;p>Secondary CRC Frame&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryCRCFrameAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>37</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryCRCMNSCAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryCRCMNSCAlarm</event-label>
+      <descr>
+&lt;p>Secondary CRC MNSC&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryCRCMNSCAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>38</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryMNSCAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryMNSCAlarm</event-label>
+      <descr>
+&lt;p>Secondary MNSC&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryMNSCAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>39</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryTimestampAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryTimestampAlarm</event-label>
+      <descr>
+&lt;p>Secondary Timestamp&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryTimestampAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>40</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryMNSCADDRAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryMNSCADDRAlarm</event-label>
+      <descr>
+&lt;p>Secondary MNSC Address&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryMNSCADDRAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>41</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryTISTSyncAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryTISTSyncAlarm</event-label>
+      <descr>
+&lt;p>Secondary TIST Sync&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryTISTSyncAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>42</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSecondaryTISTHoldoverAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSecondaryTISTHoldoverAlarm</event-label>
+      <descr>
+&lt;p>Secondary TIST Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSecondaryTISTHoldoverAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>44</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRFOverloadProtectionAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRFOverloadProtectionAlarm</event-label>
+      <descr>
+&lt;p>Overload Protection&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRFOverloadProtectionAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>55</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommeth0Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommeth0Alarm</event-label>
+      <descr>
+&lt;p>ETH0 Conn. State&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommeth0Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>56</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommeth1Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommeth1Alarm</event-label>
+      <descr>
+&lt;p>ETH1 Conn. State&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommeth1Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>57</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommeth2Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommeth2Alarm</event-label>
+      <descr>
+&lt;p>ETH2 Conn. State&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommeth2Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>58</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommeth3Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommeth3Alarm</event-label>
+      <descr>
+&lt;p>ETH3 Conn. State&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommeth3Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>59</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommeth4Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommeth4Alarm</event-label>
+      <descr>
+&lt;p>ETH4 Conn. State&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommeth4Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>72</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput1Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput1Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 1&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput1Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>73</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput2Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput2Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 2&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput2Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>74</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput3Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput3Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 3&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput3Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>75</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput4Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput4Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 4&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput4Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>76</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockExtern1PPSLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockExtern1PPSLossAlarm</event-label>
+      <descr>
+&lt;p>Ext. 1PPS Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockExtern1PPSLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>77</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockIntern1PPSLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockIntern1PPSLossAlarm</event-label>
+      <descr>
+&lt;p>Int. 10MHz Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockIntern1PPSLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>78</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockExtern10MHzLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockExtern10MHzLossAlarm</event-label>
+      <descr>
+&lt;p>Ext. 10MHz Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockExtern10MHzLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>79</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRFAlcRangeAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRFAlcRangeAlarm</event-label>
+      <descr>
+&lt;p>ALC Range&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRFAlcRangeAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>80</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifModulatorResyncAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifModulatorResyncAlarm</event-label>
+      <descr>
+&lt;p>Resync Error&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifModulatorResyncAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>81</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSFNTSPrimaryMaxDelayOffsetExceededAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSFNTSPrimaryMaxDelayOffsetExceededAlarm</event-label>
+      <descr>
+&lt;p>Primary SFN Max Delay + Offset OOR&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSFNTSPrimaryMaxDelayOffsetExceededAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>82</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSFNTSPrimaryNetworkDelayExceededAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSFNTSPrimaryNetworkDelayExceededAlarm</event-label>
+      <descr>
+&lt;p>Primary SFN NW Delay Greater Than Max&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSFNTSPrimaryNetworkDelayExceededAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>84</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSFNTSSecondaryMaxDelayIffsetExceededAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSFNTSSecondaryMaxDelayIffsetExceededAlarm</event-label>
+      <descr>
+&lt;p>Secondary SFN Max. Delay + Offset OOR&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSFNTSSecondaryMaxDelayIffsetExceededAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>85</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifSFNTSSecondaryNetworkDelayExceededAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifSFNTSSecondaryNetworkDelayExceededAlarm</event-label>
+      <descr>
+&lt;p>Secondary SFN NW Delay Greater Than Max&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifSFNTSSecondaryNetworkDelayExceededAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>87</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRFLevelOutOfRangeAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRFLevelOutOfRangeAlarm</event-label>
+      <descr>
+&lt;p>RF Level Out of Range&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRFLevelOutOfRangeAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>89</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockNTPSyncLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockNTPSyncLossAlarm</event-label>
+      <descr>
+&lt;p>NTP Sync Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockNTPSyncLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>92</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifModulatorTSPrimarySeamlessDelayTooSmallAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifModulatorTSPrimarySeamlessDelayTooSmallAlarm</event-label>
+      <descr>
+&lt;p>Primary Delay Margin too Small for Seamless and Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifModulatorTSPrimarySeamlessDelayTooSmallAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>93</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifModulatorTSPrimaryDelayMarginTooSmallAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifModulatorTSPrimaryDelayMarginTooSmallAlarm</event-label>
+      <descr>
+&lt;p>Primary Delay Margin too Small&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifModulatorTSPrimaryDelayMarginTooSmallAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>94</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifModulatorTSSecondarySeamlessDelayTooSmallAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifModulatorTSSecondarySeamlessDelayTooSmallAlarm</event-label>
+      <descr>
+&lt;p>Secondary Delay Margin too Small for Seamless and Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifModulatorTSSecondarySeamlessDelayTooSmallAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>95</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifModulatorTSSecondaryDelayMarginTooSmallAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifModulatorTSSecondaryDelayMarginTooSmallAlarm</event-label>
+      <descr>
+&lt;p>Secondary Delay Margin too Small&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifModulatorTSSecondaryDelayMarginTooSmallAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>98</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifGNSSUnlockedAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifGNSSUnlockedAlarm</event-label>
+      <descr>
+&lt;p>GNSS Unlocked&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifGNSSUnlockedAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>107</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifGNSSAntennaFaultAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifGNSSAntennaFaultAlarm</event-label>
+      <descr>
+&lt;p>GNSS Antenna Fault&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifGNSSAntennaFaultAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>108</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifGNSSHoldOverAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifGNSSHoldOverAlarm</event-label>
+      <descr>
+&lt;p>GNSS Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifGNSSHoldOverAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>109</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockExternal10MHzHoldOverAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockExternal10MHzHoldOverAlarm</event-label>
+      <descr>
+&lt;p>Ext. 10MHz Ref Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockExternal10MHzHoldOverAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>110</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifRefenceClockExternal1PPSHoldOverAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifRefenceClockExternal1PPSHoldOverAlarm</event-label>
+      <descr>
+&lt;p>Ext. 1PPS Ref Holdover&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifRefenceClockExternal1PPSHoldOverAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>115</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifEDIRx1PackageErrorRationExceededAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifEDIRx1PackageErrorRationExceededAlarm</event-label>
+      <descr>
+&lt;p>EDI RX1 Package Error Ratio Exceeded&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifEDIRx1PackageErrorRationExceededAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>117</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifEDIRx2PackageErrorRationExceededAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifEDIRx2PackageErrorRationExceededAlarm</event-label>
+      <descr>
+&lt;p>EDI RX2 Package Error Ratio Exceeded&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifEDIRx2PackageErrorRationExceededAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>119</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifEDIRx1SyncLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifEDIRx1SyncLossAlarm</event-label>
+      <descr>
+&lt;p>EDI RX1 Signal Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifEDIRx1SyncLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>121</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifEDIRx2SyncLossAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifEDIRx2SyncLossAlarm</event-label>
+      <descr>
+&lt;p>EDI RX2 Signal Loss&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifEDIRx2SyncLossAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>129</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalBackplaneAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalBackplaneAlarm</event-label>
+      <descr>
+&lt;p>Backplane Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalBackplaneAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>132</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalReferenceClockAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalReferenceClockAlarm</event-label>
+      <descr>
+&lt;p>Reference Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalReferenceClockAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>134</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalUpConverterAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalUpConverterAlarm</event-label>
+      <descr>
+&lt;p>Upconverter Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalUpConverterAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>135</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalDownConverterAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalDownConverterAlarm</event-label>
+      <descr>
+&lt;p>Downconverter Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalDownConverterAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>136</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalMainboardAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalMainboardAlarm</event-label>
+      <descr>
+&lt;p>Main board Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalMainboardAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>137</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalBatteryAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalBatteryAlarm</event-label>
+      <descr>
+&lt;p>Main Board Battery&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalBatteryAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>139</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalFirmware1Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalFirmware1Alarm</event-label>
+      <descr>
+&lt;p>Firmware 1 Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalFirmware1Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>142</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalGNSSAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalGNSSAlarm</event-label>
+      <descr>
+&lt;p>GNSS Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalGNSSAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>143</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalSatelliteAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalSatelliteAlarm</event-label>
+      <descr>
+&lt;p>Satrecv Status&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalSatelliteAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>146</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalEthAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalEthAlarm</event-label>
+      <descr>
+&lt;p>EtherNet Port Failure&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalEthAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>156</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorFPGAAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorFPGAAlarm</event-label>
+      <descr>
+&lt;p>Main Board FPGA Temperature&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorFPGAAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>157</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorMainBoardCPUTemperatureAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorMainBoardCPUTemperatureAlarm</event-label>
+      <descr>
+&lt;p>Main Board CPU Temperature&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorMainBoardCPUTemperatureAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>158</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorMainBoardTemperatureAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorMainBoardTemperatureAlarm</event-label>
+      <descr>
+&lt;p>Main Board Temperature&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorMainBoardTemperatureAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>159</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorLeftFanAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorLeftFanAlarm</event-label>
+      <descr>
+&lt;p>Left Chassis Fan&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorLeftFanAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>160</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorRightFan2Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorRightFan2Alarm</event-label>
+      <descr>
+&lt;p>Right Chassis Fan&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorRightFan2Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>162</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifHWMonitorBackplaneTemperatureAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifHWMonitorBackplaneTemperatureAlarm</event-label>
+      <descr>
+&lt;p>Backplane Temperature&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifHWMonitorBackplaneTemperatureAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>182</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalPLLUnlockedAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalPLLUnlockedAlarm</event-label>
+      <descr>
+&lt;p>PLL Out of Lock&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalPLLUnlockedAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>183</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput5Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput5Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 5&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput5Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>186</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput6Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput6Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 6&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput6Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>187</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput7Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput7Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 7&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput7Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>188</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifExternalInput8Alarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifExternalInput8Alarm</event-label>
+      <descr>
+&lt;p>Alarm Input 8&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifExternalInput8Alarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>198</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifInternalCalibrationAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifInternalCalibrationAlarm</event-label>
+      <descr>
+&lt;p>Calibration Data&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifInternalCalibrationAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.18086.3070.64</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>199</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/traps/PT3070-MIB/pt3070NotifCommnetconfAlarm</uei>
+      <event-label>PT3070-MIB defined trap event: pt3070NotifCommnetconfAlarm</event-label>
+      <descr>
+&lt;p>Network Configuration&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifState&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>
+		off(0)
+		activated(1)
+	&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	pt3070NotifLocalTime&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	pt3070NotifCommnetconfAlarm trap received
+	pt3070NotifMessage=%parm[#1]%
+	pt3070NotifState=%parm[#2]%
+	pt3070NotifLocalTime=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Indeterminate</severity>
+      <varbindsdecode>
+         <parmid>parm[#2]</parmid>
+         <decode varbindvalue="0" varbinddecodedstring="off"/>
+         <decode varbindvalue="1" varbinddecodedstring="activated"/>
+      </varbindsdecode>
+   </event>
+</events>
