@@ -41,3 +41,11 @@ snmpwalk -v1 -On localhost -c draytek2860-virtual .1.3
 ```
 snmpwalk -v1 -On localhost -c cardinalImdu .1.3
 ```
+
+```
+snmpwalk -v1 -On localhost -c PT3070 .1.3
+```
+
+```
+snmpwalk -v1 -On localhost -c TREDESS_FS .1.3
+```

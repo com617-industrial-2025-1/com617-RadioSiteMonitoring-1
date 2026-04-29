@@ -431,6 +431,8 @@ services:
       - ./container-fs/snmpsim/data/draytek2860-pri.snmprec:/usr/local/snmpsim/data/draytek2860-pri.snmprec
       - ./container-fs/snmpsim/data/draytek2860-sec.snmprec:/usr/local/snmpsim/data/draytek2860-sec.snmprec
       - ./container-fs/snmpsim/data/draytek2860-virtual.snmprec:/usr/local/snmpsim/data/draytek2860-virtual.snmprec
+      - ./container-fs/snmpsim/data/PT3070.snmprec:/usr/local/snmpsim/data/PT3070.snmprec
+      - ./container-fs/snmpsim/data/TREDESS_FS.snmprec:/usr/local/snmpsim/data/TREDESS_FS.snmprec
 
       # note empty public.snmprec so that there is no response to a community name public request
       - ./container-fs/snmpsim/data/public.snmprec:/usr/local/snmpsim/data/public.snmprec
@@ -612,4 +614,45 @@ services:
     networks:
       testradiosite1:
         ipv4_address: 192.168.105.240
+        
+  TREDESS_FS:
+    profiles: [opennms]
+#    image: ${DOCKER_REGISTRY:-docker.io}/tandrup/snmpsim:${SNMPSIM_VERSION:-v0.4}
+    image: onms-training/snmpsim
+#    build: ./container-fs/snmpsim/
+    container_name: TREDESS_FS
+    hostname: TREDESS_FS
+    environment:
+      EXTRA_FLAGS: "--v3-user=testing --v3-auth-key=testing123"
+    volumes:
+      - ./container-fs/snmpsim/data/TREDESS_FS.snmprec:/usr/local/snmpsim/data/public.snmprec
+
+      # mibs folder so we can compile mibs if needed
+      - ./container-fs/snmpsim/mibs:/usr/local/snmpsim/mibs
+    ports:
+      - "12561:161/udp"
+    networks:
+      testradiosite1:
+        ipv4_address: 192.168.105.102
+        
+  PT3070:
+    profiles: [opennms]
+#    image: ${DOCKER_REGISTRY:-docker.io}/tandrup/snmpsim:${SNMPSIM_VERSION:-v0.4}
+    image: onms-training/snmpsim
+#    build: ./container-fs/snmpsim/
+    container_name: PT3070
+    hostname: PT3070
+    environment:
+      EXTRA_FLAGS: "--v3-user=testing --v3-auth-key=testing123"
+    volumes:
+      - ./container-fs/snmpsim/data/PT3070.snmprec:/usr/local/snmpsim/data/public.snmprec
+
+      # mibs folder so we can compile mibs if needed
+      - ./container-fs/snmpsim/mibs:/usr/local/snmpsim/mibs
+    ports:
+      - "12661:161/udp"
+    networks:
+      testradiosite1:
+        ipv4_address: 192.168.105.103
+
         
