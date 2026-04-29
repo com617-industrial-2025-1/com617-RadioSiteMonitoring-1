@@ -1,0 +1,94 @@
+Name,OID,Description
+pt3070Notif,.1.3.6.1.4.1.18086.3070.64.0,
+pt3070NotifModulatorAlarm,.1.3.6.1.4.1.18086.3070.64.0.3,Modulator Alarms
+pt3070NotifPrimaryAlarm,.1.3.6.1.4.1.18086.3070.64.0.5,Primary Alarms
+pt3070NotifSecondaryAlarm,.1.3.6.1.4.1.18086.3070.64.0.6,Secondary Alarms
+pt3070NotifSFNAlarm,.1.3.6.1.4.1.18086.3070.64.0.7,SFN Alarms
+pt3070NotifRefenceClockAlarm,.1.3.6.1.4.1.18086.3070.64.0.8,Reference Alarms
+pt3070NotifRFAlarm,.1.3.6.1.4.1.18086.3070.64.0.9,RF Alarms
+pt3070NotifGNSSAlarm,.1.3.6.1.4.1.18086.3070.64.0.10,GNSS Alarms
+pt3070NotifEDIAlarm,.1.3.6.1.4.1.18086.3070.64.0.12,EDI Alarms
+pt3070NotifExternalAlarm,.1.3.6.1.4.1.18086.3070.64.0.13,External Alarms
+pt3070NotifHWMonitorAlarm,.1.3.6.1.4.1.18086.3070.64.0.14,HW Monitor Alarms
+pt3070NotifCommAlarm,.1.3.6.1.4.1.18086.3070.64.0.15,Communications Alarms
+pt3070NotifETIAlarm,.1.3.6.1.4.1.18086.3070.64.0.16,ETI Alarms
+pt3070NotifInternalAlarm,.1.3.6.1.4.1.18086.3070.64.0.18,Internal Alarms
+pt3070NotifPrimarySyncLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.21,Primary Sync Loss
+pt3070NotifPrimarypktcrcAlarm,.1.3.6.1.4.1.18086.3070.64.0.22,Primary PKT Corr by CRC
+pt3070NotifPrimaryBROOPRAlarm,.1.3.6.1.4.1.18086.3070.64.0.23,Primary Bitrate OOPR
+pt3070NotifPrimaryCRCHeaderAlarm,.1.3.6.1.4.1.18086.3070.64.0.24,Primary CRC Header
+pt3070NotifPrimaryCRCFrameAlarm,.1.3.6.1.4.1.18086.3070.64.0.25,Primary CRC Frame
+pt3070NotifPrimaryCRCMNSCAlarm,.1.3.6.1.4.1.18086.3070.64.0.26,Primary CRC MNSC
+pt3070NotifPrimaryMNSCAlarm,.1.3.6.1.4.1.18086.3070.64.0.27,Primary MNSC
+pt3070NotifPrimaryTimestampAlarm,.1.3.6.1.4.1.18086.3070.64.0.28,Primary Timestamp
+pt3070NotifPrimaryMNSCADDRAlarm,.1.3.6.1.4.1.18086.3070.64.0.29,Primary MNSC Address
+pt3070NotifPrimaryTISTSyncAlarm,.1.3.6.1.4.1.18086.3070.64.0.30,Primary TIST Sync
+pt3070NotifPrimaryTISTHoldoverAlarm,.1.3.6.1.4.1.18086.3070.64.0.31,Primary TIST Holdover
+pt3070NotifSecondarySyncLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.32,Secondary Sync Loss
+pt3070NotifSecondarypktcrcAlarm,.1.3.6.1.4.1.18086.3070.64.0.33,Secondary PKT Corr by CRC
+pt3070NotifSecondaryBROOPRAlarm,.1.3.6.1.4.1.18086.3070.64.0.34,Secondary Bitrate OOPR
+pt3070NotifSecondaryCRCHeaderAlarm,.1.3.6.1.4.1.18086.3070.64.0.35,Secondary CRC Header
+pt3070NotifSecondaryCRCFrameAlarm,.1.3.6.1.4.1.18086.3070.64.0.36,Secondary CRC Frame
+pt3070NotifSecondaryCRCMNSCAlarm,.1.3.6.1.4.1.18086.3070.64.0.37,Secondary CRC MNSC
+pt3070NotifSecondaryMNSCAlarm,.1.3.6.1.4.1.18086.3070.64.0.38,Secondary MNSC
+pt3070NotifSecondaryTimestampAlarm,.1.3.6.1.4.1.18086.3070.64.0.39,Secondary Timestamp
+pt3070NotifSecondaryMNSCADDRAlarm,.1.3.6.1.4.1.18086.3070.64.0.40,Secondary MNSC Address
+pt3070NotifSecondaryTISTSyncAlarm,.1.3.6.1.4.1.18086.3070.64.0.41,Secondary TIST Sync
+pt3070NotifSecondaryTISTHoldoverAlarm,.1.3.6.1.4.1.18086.3070.64.0.42,Secondary TIST Holdover
+pt3070NotifRFOverloadProtectionAlarm,.1.3.6.1.4.1.18086.3070.64.0.44,Overload Protection
+pt3070NotifCommeth0Alarm,.1.3.6.1.4.1.18086.3070.64.0.55,ETH0 Conn. State
+pt3070NotifCommeth1Alarm,.1.3.6.1.4.1.18086.3070.64.0.56,ETH1 Conn. State
+pt3070NotifCommeth2Alarm,.1.3.6.1.4.1.18086.3070.64.0.57,ETH2 Conn. State
+pt3070NotifCommeth3Alarm,.1.3.6.1.4.1.18086.3070.64.0.58,ETH3 Conn. State
+pt3070NotifCommeth4Alarm,.1.3.6.1.4.1.18086.3070.64.0.59,ETH4 Conn. State
+pt3070NotifExternalInput1Alarm,.1.3.6.1.4.1.18086.3070.64.0.72,Alarm Input 1
+pt3070NotifExternalInput2Alarm,.1.3.6.1.4.1.18086.3070.64.0.73,Alarm Input 2
+pt3070NotifExternalInput3Alarm,.1.3.6.1.4.1.18086.3070.64.0.74,Alarm Input 3
+pt3070NotifExternalInput4Alarm,.1.3.6.1.4.1.18086.3070.64.0.75,Alarm Input 4
+pt3070NotifRefenceClockExtern1PPSLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.76,Ext. 1PPS Loss
+pt3070NotifRefenceClockIntern1PPSLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.77,Int. 10MHz Loss
+pt3070NotifRefenceClockExtern10MHzLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.78,Ext. 10MHz Loss
+pt3070NotifRFAlcRangeAlarm,.1.3.6.1.4.1.18086.3070.64.0.79,ALC Range
+pt3070NotifModulatorResyncAlarm,.1.3.6.1.4.1.18086.3070.64.0.80,Resync Error
+pt3070NotifSFNTSPrimaryMaxDelayOffsetExceededAlarm,.1.3.6.1.4.1.18086.3070.64.0.81,Primary SFN Max Delay + Offset OOR
+pt3070NotifSFNTSPrimaryNetworkDelayExceededAlarm,.1.3.6.1.4.1.18086.3070.64.0.82,Primary SFN NW Delay Greater Than Max
+pt3070NotifSFNTSSecondaryMaxDelayIffsetExceededAlarm,.1.3.6.1.4.1.18086.3070.64.0.84,Secondary SFN Max. Delay + Offset OOR
+pt3070NotifSFNTSSecondaryNetworkDelayExceededAlarm,.1.3.6.1.4.1.18086.3070.64.0.85,Secondary SFN NW Delay Greater Than Max
+pt3070NotifRFLevelOutOfRangeAlarm,.1.3.6.1.4.1.18086.3070.64.0.87,RF Level Out of Range
+pt3070NotifRefenceClockNTPSyncLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.89,NTP Sync Loss
+pt3070NotifModulatorTSPrimarySeamlessDelayTooSmallAlarm,.1.3.6.1.4.1.18086.3070.64.0.92,Primary Delay Margin too Small for Seamless and Holdover
+pt3070NotifModulatorTSPrimaryDelayMarginTooSmallAlarm,.1.3.6.1.4.1.18086.3070.64.0.93,Primary Delay Margin too Small
+pt3070NotifModulatorTSSecondarySeamlessDelayTooSmallAlarm,.1.3.6.1.4.1.18086.3070.64.0.94,Secondary Delay Margin too Small for Seamless and Holdover
+pt3070NotifModulatorTSSecondaryDelayMarginTooSmallAlarm,.1.3.6.1.4.1.18086.3070.64.0.95,Secondary Delay Margin too Small
+pt3070NotifGNSSUnlockedAlarm,.1.3.6.1.4.1.18086.3070.64.0.98,GNSS Unlocked
+pt3070NotifGNSSAntennaFaultAlarm,.1.3.6.1.4.1.18086.3070.64.0.107,GNSS Antenna Fault
+pt3070NotifGNSSHoldOverAlarm,.1.3.6.1.4.1.18086.3070.64.0.108,GNSS Holdover
+pt3070NotifRefenceClockExternal10MHzHoldOverAlarm,.1.3.6.1.4.1.18086.3070.64.0.109,Ext. 10MHz Ref Holdover
+pt3070NotifRefenceClockExternal1PPSHoldOverAlarm,.1.3.6.1.4.1.18086.3070.64.0.110,Ext. 1PPS Ref Holdover
+pt3070NotifEDIRx1PackageErrorRationExceededAlarm,.1.3.6.1.4.1.18086.3070.64.0.115,EDI RX1 Package Error Ratio Exceeded
+pt3070NotifEDIRx2PackageErrorRationExceededAlarm,.1.3.6.1.4.1.18086.3070.64.0.117,EDI RX2 Package Error Ratio Exceeded
+pt3070NotifEDIRx1SyncLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.119,EDI RX1 Signal Loss
+pt3070NotifEDIRx2SyncLossAlarm,.1.3.6.1.4.1.18086.3070.64.0.121,EDI RX2 Signal Loss
+pt3070NotifInternalBackplaneAlarm,.1.3.6.1.4.1.18086.3070.64.0.129,Backplane Status
+pt3070NotifInternalReferenceClockAlarm,.1.3.6.1.4.1.18086.3070.64.0.132,Reference Status
+pt3070NotifInternalUpConverterAlarm,.1.3.6.1.4.1.18086.3070.64.0.134,Upconverter Status
+pt3070NotifInternalDownConverterAlarm,.1.3.6.1.4.1.18086.3070.64.0.135,Downconverter Status
+pt3070NotifInternalMainboardAlarm,.1.3.6.1.4.1.18086.3070.64.0.136,Main board Status
+pt3070NotifInternalBatteryAlarm,.1.3.6.1.4.1.18086.3070.64.0.137,Main Board Battery
+pt3070NotifInternalFirmware1Alarm,.1.3.6.1.4.1.18086.3070.64.0.139,Firmware 1 Status
+pt3070NotifInternalGNSSAlarm,.1.3.6.1.4.1.18086.3070.64.0.142,GNSS Status
+pt3070NotifInternalSatelliteAlarm,.1.3.6.1.4.1.18086.3070.64.0.143,Satrecv Status
+pt3070NotifInternalEthAlarm,.1.3.6.1.4.1.18086.3070.64.0.146,EtherNet Port Failure
+pt3070NotifHWMonitorFPGAAlarm,.1.3.6.1.4.1.18086.3070.64.0.156,Main Board FPGA Temperature
+pt3070NotifHWMonitorMainBoardCPUTemperatureAlarm,.1.3.6.1.4.1.18086.3070.64.0.157,Main Board CPU Temperature
+pt3070NotifHWMonitorMainBoardTemperatureAlarm,.1.3.6.1.4.1.18086.3070.64.0.158,Main Board Temperature
+pt3070NotifHWMonitorLeftFanAlarm,.1.3.6.1.4.1.18086.3070.64.0.159,Left Chassis Fan
+pt3070NotifHWMonitorRightFan2Alarm,.1.3.6.1.4.1.18086.3070.64.0.160,Right Chassis Fan
+pt3070NotifHWMonitorBackplaneTemperatureAlarm,.1.3.6.1.4.1.18086.3070.64.0.162,Backplane Temperature
+pt3070NotifInternalPLLUnlockedAlarm,.1.3.6.1.4.1.18086.3070.64.0.182,PLL Out of Lock
+pt3070NotifExternalInput5Alarm,.1.3.6.1.4.1.18086.3070.64.0.183,Alarm Input 5
+pt3070NotifExternalInput6Alarm,.1.3.6.1.4.1.18086.3070.64.0.186,Alarm Input 6
+pt3070NotifExternalInput7Alarm,.1.3.6.1.4.1.18086.3070.64.0.187,Alarm Input 7
+pt3070NotifExternalInput8Alarm,.1.3.6.1.4.1.18086.3070.64.0.188,Alarm Input 8
+pt3070NotifInternalCalibrationAlarm,.1.3.6.1.4.1.18086.3070.64.0.198,Calibration Data
+pt3070NotifCommnetconfAlarm,.1.3.6.1.4.1.18086.3070.64.0.199,Network Configuration
