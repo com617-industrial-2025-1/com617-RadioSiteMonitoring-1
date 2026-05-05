@@ -1,0 +1,1266 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "opennms-performance-datasource",
+        "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "inlineEditing": true,
+        "root": {
+          "background": {
+            "color": {
+              "fixed": "transparent"
+            }
+          },
+          "border": {
+            "color": {
+              "fixed": "dark-green"
+            }
+          },
+          "constraint": {
+            "horizontal": "left",
+            "vertical": "top"
+          },
+          "elements": [
+            {
+              "background": {
+                "color": {
+                  "field": "edi_source",
+                  "fixed": "#D9D9D9"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "#000000"
+                },
+                "size": 20,
+                "text": {
+                  "field": "edi_source",
+                  "fixed": "",
+                  "mode": "field"
+                },
+                "valign": "middle"
+              },
+              "connections": [],
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 1",
+              "placement": {
+                "height": 50,
+                "left": 166,
+                "top": 18,
+                "width": 260
+              },
+              "type": "metric-value"
+            },
+            {
+              "background": {
+                "color": {
+                  "field": "gainmode",
+                  "fixed": "#D9D9D9"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "#000000"
+                },
+                "size": 20,
+                "text": {
+                  "field": "gainmode",
+                  "fixed": "",
+                  "mode": "field"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 2",
+              "placement": {
+                "height": 50,
+                "left": 167,
+                "top": 86,
+                "width": 260
+              },
+              "type": "metric-value"
+            },
+            {
+              "background": {
+                "color": {
+                  "field": "ensemble_label",
+                  "fixed": "#D9D9D9"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "#000000"
+                },
+                "size": 20,
+                "text": {
+                  "field": "ensemble_label",
+                  "fixed": "",
+                  "mode": "field"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 3",
+              "placement": {
+                "height": 50,
+                "left": 165,
+                "top": 154,
+                "width": 260
+              },
+              "type": "metric-value"
+            },
+            {
+              "background": {
+                "color": {
+                  "field": "ensemble_eid",
+                  "fixed": "#D9D9D9"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "#000000"
+                },
+                "size": 20,
+                "text": {
+                  "field": "ensemble_eid",
+                  "fixed": "",
+                  "mode": "field"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 4",
+              "placement": {
+                "height": 50,
+                "left": 165,
+                "top": 224,
+                "width": 260
+              },
+              "type": "metric-value"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "transparent"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "rgb(204, 204, 220)"
+                },
+                "size": 16,
+                "text": {
+                  "fixed": "edi_source"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 5",
+              "placement": {
+                "height": 50,
+                "left": 21,
+                "top": 22,
+                "width": 100
+              },
+              "type": "text"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "transparent"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "rgb(204, 204, 220)"
+                },
+                "size": 16,
+                "text": {
+                  "fixed": "gain_mode"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 6",
+              "placement": {
+                "height": 50,
+                "left": 22,
+                "top": 82,
+                "width": 100
+              },
+              "type": "text"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "transparent"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "rgb(204, 204, 220)"
+                },
+                "size": 16,
+                "text": {
+                  "fixed": "ensemble_label"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 7",
+              "placement": {
+                "height": 50,
+                "left": 30,
+                "top": 153,
+                "width": 100
+              },
+              "type": "text"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "transparent"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                }
+              },
+              "config": {
+                "align": "center",
+                "color": {
+                  "fixed": "rgb(204, 204, 220)"
+                },
+                "size": 16,
+                "text": {
+                  "fixed": "ensemble_eid"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 8",
+              "placement": {
+                "height": 50,
+                "left": 28,
+                "top": 228,
+                "width": 100
+              },
+              "type": "text"
+            }
+          ],
+          "name": "Element 1778003552037",
+          "placement": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          },
+          "type": "frame"
+        },
+        "showAdvancedTypes": true
+      },
+      "pluginVersion": "10.1.10",
+      "targets": [
+        {
+          "datasource": {
+            "type": "opennms-performance-datasource",
+            "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+          },
+          "performanceType": {
+            "label": "String Property",
+            "value": 4
+          },
+          "refId": "A",
+          "stringPropertyState": {
+            "node": {
+              "snmpInterfaces": [],
+              "ipInterfaces": [
+                {
+                  "services": [],
+                  "id": 27,
+                  "hostname": "DABMux.kuwaiba-docker-compose-radio_testradiosite1",
+                  "ipAddress": {
+                    "groups": 4,
+                    "parsedAddress": [
+                      "192",
+                      "168",
+                      "105",
+                      "106"
+                    ],
+                    "parsedSubnet": "",
+                    "subnet": "/32",
+                    "subnetMask": 32,
+                    "v4": true,
+                    "address": "192.168.105.106",
+                    "addressMinusSuffix": "192.168.105.106"
+                  },
+                  "isDown": false,
+                  "isManaged": {
+                    "id": "M",
+                    "label": "MANAGED"
+                  },
+                  "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+                  "monitoredServiceCount": 3,
+                  "snmpPrimary": {
+                    "id": "P",
+                    "label": "PRIMARY"
+                  },
+                  "node": {
+                    "id": 6
+                  }
+                }
+              ],
+              "categories": [],
+              "assets": {
+                "category": "Unspecified",
+                "id": 31,
+                "lastModifiedBy": "",
+                "lastModifiedDate": 1778000944908
+              },
+              "id": 6,
+              "label": "DABmux",
+              "location": "crabwoodFarm1",
+              "foreignSource": "dab-test",
+              "foreignId": "DABmux",
+              "labelSource": {
+                "id": "U",
+                "label": "USER"
+              },
+              "createTime": "2026-05-05T17:08:44.700Z",
+              "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+              "type": {
+                "id": "A",
+                "label": "ACTIVE"
+              }
+            },
+            "resource": {
+              "children": {
+                "offset": 0,
+                "resource": []
+              },
+              "externalValueAttributes": {},
+              "id": "nodeSnmp[]",
+              "label": "Node-level Performance Data",
+              "name": "",
+              "parentId": "node[dab-test:DABmux]",
+              "rrdGraphAttributes": {
+                "iq_samplerate": {
+                  "name": "iq_samplerate",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "iq_samplerate.rrd"
+                },
+                "most_recent_edi_decoded": {
+                  "name": "most_recent_edi_decoded",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "most_recent_edi_decoded.rrd"
+                },
+                "num_modulator_restarts": {
+                  "name": "num_modulator_restarts",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_modulator_restarts.rrd"
+                },
+                "num_services": {
+                  "name": "num_services",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_services.rrd"
+                },
+                "running_since": {
+                  "name": "running_since",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "running_since.rrd"
+                },
+                "tist_offset": {
+                  "name": "tist_offset",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "tist_offset.rrd"
+                }
+              },
+              "stringPropertyAttributes": {
+                "digital_gain": "0.800000",
+                "edi_source": "tcp://mux:13000",
+                "ensemble_eid": "49622",
+                "ensemble_label": "Solent Uni",
+                "gainmode": "var"
+              },
+              "typeLabel": "SNMP Node Data"
+            },
+            "stringProperty": {
+              "label": "edi_source",
+              "value": "edi_source"
+            }
+          }
+        },
+        {
+          "datasource": {
+            "type": "opennms-performance-datasource",
+            "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+          },
+          "hide": false,
+          "performanceType": {
+            "label": "String Property",
+            "value": 4
+          },
+          "refId": "B",
+          "stringPropertyState": {
+            "node": {
+              "snmpInterfaces": [],
+              "ipInterfaces": [
+                {
+                  "services": [],
+                  "id": 27,
+                  "hostname": "DABMux.kuwaiba-docker-compose-radio_testradiosite1",
+                  "ipAddress": {
+                    "groups": 4,
+                    "parsedAddress": [
+                      "192",
+                      "168",
+                      "105",
+                      "106"
+                    ],
+                    "parsedSubnet": "",
+                    "subnet": "/32",
+                    "subnetMask": 32,
+                    "v4": true,
+                    "address": "192.168.105.106",
+                    "addressMinusSuffix": "192.168.105.106"
+                  },
+                  "isDown": false,
+                  "isManaged": {
+                    "id": "M",
+                    "label": "MANAGED"
+                  },
+                  "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+                  "monitoredServiceCount": 3,
+                  "snmpPrimary": {
+                    "id": "P",
+                    "label": "PRIMARY"
+                  },
+                  "node": {
+                    "id": 6
+                  }
+                }
+              ],
+              "categories": [],
+              "assets": {
+                "category": "Unspecified",
+                "id": 31,
+                "lastModifiedBy": "",
+                "lastModifiedDate": 1778000944908
+              },
+              "id": 6,
+              "label": "DABmux",
+              "location": "crabwoodFarm1",
+              "foreignSource": "dab-test",
+              "foreignId": "DABmux",
+              "labelSource": {
+                "id": "U",
+                "label": "USER"
+              },
+              "createTime": "2026-05-05T17:08:44.700Z",
+              "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+              "type": {
+                "id": "A",
+                "label": "ACTIVE"
+              }
+            },
+            "resource": {
+              "children": {
+                "offset": 0,
+                "resource": []
+              },
+              "externalValueAttributes": {},
+              "id": "nodeSnmp[]",
+              "label": "Node-level Performance Data",
+              "name": "",
+              "parentId": "node[dab-test:DABmux]",
+              "rrdGraphAttributes": {
+                "iq_samplerate": {
+                  "name": "iq_samplerate",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "iq_samplerate.rrd"
+                },
+                "most_recent_edi_decoded": {
+                  "name": "most_recent_edi_decoded",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "most_recent_edi_decoded.rrd"
+                },
+                "num_modulator_restarts": {
+                  "name": "num_modulator_restarts",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_modulator_restarts.rrd"
+                },
+                "num_services": {
+                  "name": "num_services",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_services.rrd"
+                },
+                "running_since": {
+                  "name": "running_since",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "running_since.rrd"
+                },
+                "tist_offset": {
+                  "name": "tist_offset",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "tist_offset.rrd"
+                }
+              },
+              "stringPropertyAttributes": {
+                "digital_gain": "0.800000",
+                "edi_source": "tcp://mux:13000",
+                "ensemble_eid": "49622",
+                "ensemble_label": "Solent Uni",
+                "gainmode": "var"
+              },
+              "typeLabel": "SNMP Node Data"
+            },
+            "stringProperty": {
+              "label": "gainmode",
+              "value": "gainmode"
+            }
+          }
+        },
+        {
+          "datasource": {
+            "type": "opennms-performance-datasource",
+            "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+          },
+          "hide": false,
+          "performanceType": {
+            "label": "String Property",
+            "value": 4
+          },
+          "refId": "C",
+          "stringPropertyState": {
+            "node": {
+              "snmpInterfaces": [],
+              "ipInterfaces": [
+                {
+                  "services": [],
+                  "id": 27,
+                  "hostname": "DABMux.kuwaiba-docker-compose-radio_testradiosite1",
+                  "ipAddress": {
+                    "groups": 4,
+                    "parsedAddress": [
+                      "192",
+                      "168",
+                      "105",
+                      "106"
+                    ],
+                    "parsedSubnet": "",
+                    "subnet": "/32",
+                    "subnetMask": 32,
+                    "v4": true,
+                    "address": "192.168.105.106",
+                    "addressMinusSuffix": "192.168.105.106"
+                  },
+                  "isDown": false,
+                  "isManaged": {
+                    "id": "M",
+                    "label": "MANAGED"
+                  },
+                  "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+                  "monitoredServiceCount": 3,
+                  "snmpPrimary": {
+                    "id": "P",
+                    "label": "PRIMARY"
+                  },
+                  "node": {
+                    "id": 6
+                  }
+                }
+              ],
+              "categories": [],
+              "assets": {
+                "category": "Unspecified",
+                "id": 31,
+                "lastModifiedBy": "",
+                "lastModifiedDate": 1778000944908
+              },
+              "id": 6,
+              "label": "DABmux",
+              "location": "crabwoodFarm1",
+              "foreignSource": "dab-test",
+              "foreignId": "DABmux",
+              "labelSource": {
+                "id": "U",
+                "label": "USER"
+              },
+              "createTime": "2026-05-05T17:08:44.700Z",
+              "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+              "type": {
+                "id": "A",
+                "label": "ACTIVE"
+              }
+            },
+            "resource": {
+              "children": {
+                "offset": 0,
+                "resource": []
+              },
+              "externalValueAttributes": {},
+              "id": "nodeSnmp[]",
+              "label": "Node-level Performance Data",
+              "name": "",
+              "parentId": "node[dab-test:DABmux]",
+              "rrdGraphAttributes": {
+                "iq_samplerate": {
+                  "name": "iq_samplerate",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "iq_samplerate.rrd"
+                },
+                "most_recent_edi_decoded": {
+                  "name": "most_recent_edi_decoded",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "most_recent_edi_decoded.rrd"
+                },
+                "num_modulator_restarts": {
+                  "name": "num_modulator_restarts",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_modulator_restarts.rrd"
+                },
+                "num_services": {
+                  "name": "num_services",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_services.rrd"
+                },
+                "running_since": {
+                  "name": "running_since",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "running_since.rrd"
+                },
+                "tist_offset": {
+                  "name": "tist_offset",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "tist_offset.rrd"
+                }
+              },
+              "stringPropertyAttributes": {
+                "digital_gain": "0.800000",
+                "edi_source": "tcp://mux:13000",
+                "ensemble_eid": "49622",
+                "ensemble_label": "Solent Uni",
+                "gainmode": "var"
+              },
+              "typeLabel": "SNMP Node Data"
+            },
+            "stringProperty": {
+              "label": "ensemble_label",
+              "value": "ensemble_label"
+            }
+          }
+        },
+        {
+          "datasource": {
+            "type": "opennms-performance-datasource",
+            "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+          },
+          "hide": false,
+          "performanceType": {
+            "label": "String Property",
+            "value": 4
+          },
+          "refId": "D",
+          "stringPropertyState": {
+            "node": {
+              "snmpInterfaces": [],
+              "ipInterfaces": [
+                {
+                  "services": [],
+                  "id": 27,
+                  "hostname": "DABMux.kuwaiba-docker-compose-radio_testradiosite1",
+                  "ipAddress": {
+                    "groups": 4,
+                    "parsedAddress": [
+                      "192",
+                      "168",
+                      "105",
+                      "106"
+                    ],
+                    "parsedSubnet": "",
+                    "subnet": "/32",
+                    "subnetMask": 32,
+                    "v4": true,
+                    "address": "192.168.105.106",
+                    "addressMinusSuffix": "192.168.105.106"
+                  },
+                  "isDown": false,
+                  "isManaged": {
+                    "id": "M",
+                    "label": "MANAGED"
+                  },
+                  "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+                  "monitoredServiceCount": 3,
+                  "snmpPrimary": {
+                    "id": "P",
+                    "label": "PRIMARY"
+                  },
+                  "node": {
+                    "id": 6
+                  }
+                }
+              ],
+              "categories": [],
+              "assets": {
+                "category": "Unspecified",
+                "id": 31,
+                "lastModifiedBy": "",
+                "lastModifiedDate": 1778000944908
+              },
+              "id": 6,
+              "label": "DABmux",
+              "location": "crabwoodFarm1",
+              "foreignSource": "dab-test",
+              "foreignId": "DABmux",
+              "labelSource": {
+                "id": "U",
+                "label": "USER"
+              },
+              "createTime": "2026-05-05T17:08:44.700Z",
+              "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+              "type": {
+                "id": "A",
+                "label": "ACTIVE"
+              }
+            },
+            "resource": {
+              "children": {
+                "offset": 0,
+                "resource": []
+              },
+              "externalValueAttributes": {},
+              "id": "nodeSnmp[]",
+              "label": "Node-level Performance Data",
+              "name": "",
+              "parentId": "node[dab-test:DABmux]",
+              "rrdGraphAttributes": {
+                "iq_samplerate": {
+                  "name": "iq_samplerate",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "iq_samplerate.rrd"
+                },
+                "most_recent_edi_decoded": {
+                  "name": "most_recent_edi_decoded",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "most_recent_edi_decoded.rrd"
+                },
+                "num_modulator_restarts": {
+                  "name": "num_modulator_restarts",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_modulator_restarts.rrd"
+                },
+                "num_services": {
+                  "name": "num_services",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_services.rrd"
+                },
+                "running_since": {
+                  "name": "running_since",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "running_since.rrd"
+                },
+                "tist_offset": {
+                  "name": "tist_offset",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "tist_offset.rrd"
+                }
+              },
+              "stringPropertyAttributes": {
+                "digital_gain": "0.800000",
+                "edi_source": "tcp://mux:13000",
+                "ensemble_eid": "49622",
+                "ensemble_label": "Solent Uni",
+                "gainmode": "var"
+              },
+              "typeLabel": "SNMP Node Data"
+            },
+            "stringProperty": {
+              "label": "ensemble_eid",
+              "value": "ensemble_eid"
+            }
+          }
+        },
+        {
+          "datasource": {
+            "type": "opennms-performance-datasource",
+            "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+          },
+          "hide": false,
+          "performanceType": {
+            "label": "String Property",
+            "value": 4
+          },
+          "refId": "E",
+          "stringPropertyState": {
+            "node": {
+              "snmpInterfaces": [],
+              "ipInterfaces": [
+                {
+                  "services": [],
+                  "id": 27,
+                  "hostname": "DABMux.kuwaiba-docker-compose-radio_testradiosite1",
+                  "ipAddress": {
+                    "groups": 4,
+                    "parsedAddress": [
+                      "192",
+                      "168",
+                      "105",
+                      "106"
+                    ],
+                    "parsedSubnet": "",
+                    "subnet": "/32",
+                    "subnetMask": 32,
+                    "v4": true,
+                    "address": "192.168.105.106",
+                    "addressMinusSuffix": "192.168.105.106"
+                  },
+                  "isDown": false,
+                  "isManaged": {
+                    "id": "M",
+                    "label": "MANAGED"
+                  },
+                  "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+                  "monitoredServiceCount": 3,
+                  "snmpPrimary": {
+                    "id": "P",
+                    "label": "PRIMARY"
+                  },
+                  "node": {
+                    "id": 6
+                  }
+                }
+              ],
+              "categories": [],
+              "assets": {
+                "category": "Unspecified",
+                "id": 31,
+                "lastModifiedBy": "",
+                "lastModifiedDate": 1778000944908
+              },
+              "id": 6,
+              "label": "DABmux",
+              "location": "crabwoodFarm1",
+              "foreignSource": "dab-test",
+              "foreignId": "DABmux",
+              "labelSource": {
+                "id": "U",
+                "label": "USER"
+              },
+              "createTime": "2026-05-05T17:08:44.700Z",
+              "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+              "type": {
+                "id": "A",
+                "label": "ACTIVE"
+              }
+            },
+            "resource": {
+              "children": {
+                "offset": 0,
+                "resource": []
+              },
+              "externalValueAttributes": {},
+              "id": "nodeSnmp[]",
+              "label": "Node-level Performance Data",
+              "name": "",
+              "parentId": "node[dab-test:DABmux]",
+              "rrdGraphAttributes": {
+                "iq_samplerate": {
+                  "name": "iq_samplerate",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "iq_samplerate.rrd"
+                },
+                "most_recent_edi_decoded": {
+                  "name": "most_recent_edi_decoded",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "most_recent_edi_decoded.rrd"
+                },
+                "num_modulator_restarts": {
+                  "name": "num_modulator_restarts",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_modulator_restarts.rrd"
+                },
+                "num_services": {
+                  "name": "num_services",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_services.rrd"
+                },
+                "running_since": {
+                  "name": "running_since",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "running_since.rrd"
+                },
+                "tist_offset": {
+                  "name": "tist_offset",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "tist_offset.rrd"
+                }
+              },
+              "stringPropertyAttributes": {
+                "digital_gain": "0.800000",
+                "edi_source": "tcp://mux:13000",
+                "ensemble_eid": "49622",
+                "ensemble_label": "Solent Uni",
+                "gainmode": "var"
+              },
+              "typeLabel": "SNMP Node Data"
+            },
+            "stringProperty": {
+              "label": "digital_gain",
+              "value": "digital_gain"
+            }
+          }
+        }
+      ],
+      "title": "DAB Mux String Values",
+      "type": "canvas"
+    },
+    {
+      "datasource": {
+        "type": "opennms-performance-datasource",
+        "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "attribute": {
+            "attribute": {
+              "label": "tist_offset",
+              "name": "tist_offset",
+              "relativePath": "snmp/fs/dab-test/DABmux",
+              "rrdFile": "tist_offset.rrd"
+            },
+            "node": {
+              "snmpInterfaces": [],
+              "ipInterfaces": [
+                {
+                  "services": [],
+                  "id": 27,
+                  "hostname": "DABMux.kuwaiba-docker-compose-radio_testradiosite1",
+                  "ipAddress": {
+                    "groups": 4,
+                    "parsedAddress": [
+                      "192",
+                      "168",
+                      "105",
+                      "106"
+                    ],
+                    "parsedSubnet": "",
+                    "subnet": "/32",
+                    "subnetMask": 32,
+                    "v4": true,
+                    "address": "192.168.105.106",
+                    "addressMinusSuffix": "192.168.105.106"
+                  },
+                  "isDown": false,
+                  "isManaged": {
+                    "id": "M",
+                    "label": "MANAGED"
+                  },
+                  "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+                  "monitoredServiceCount": 3,
+                  "snmpPrimary": {
+                    "id": "P",
+                    "label": "PRIMARY"
+                  },
+                  "node": {
+                    "id": 6
+                  }
+                }
+              ],
+              "categories": [],
+              "assets": {
+                "category": "Unspecified",
+                "id": 31,
+                "lastModifiedBy": "",
+                "lastModifiedDate": 1778000944908
+              },
+              "id": 6,
+              "label": "DABmux",
+              "location": "crabwoodFarm1",
+              "foreignSource": "dab-test",
+              "foreignId": "DABmux",
+              "labelSource": {
+                "id": "U",
+                "label": "USER"
+              },
+              "createTime": "2026-05-05T17:08:44.700Z",
+              "lastCapsdPoll": "2026-05-05T17:09:04.903Z",
+              "type": {
+                "id": "A",
+                "label": "ACTIVE"
+              }
+            },
+            "resource": {
+              "children": {
+                "offset": 0,
+                "resource": []
+              },
+              "externalValueAttributes": {},
+              "id": "nodeSnmp[]",
+              "label": "Node-level Performance Data",
+              "name": "",
+              "parentId": "node[dab-test:DABmux]",
+              "rrdGraphAttributes": {
+                "iq_samplerate": {
+                  "name": "iq_samplerate",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "iq_samplerate.rrd"
+                },
+                "most_recent_edi_decoded": {
+                  "name": "most_recent_edi_decoded",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "most_recent_edi_decoded.rrd"
+                },
+                "num_modulator_restarts": {
+                  "name": "num_modulator_restarts",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_modulator_restarts.rrd"
+                },
+                "num_services": {
+                  "name": "num_services",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "num_services.rrd"
+                },
+                "running_since": {
+                  "name": "running_since",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "running_since.rrd"
+                },
+                "tist_offset": {
+                  "name": "tist_offset",
+                  "relativePath": "snmp/fs/dab-test/DABmux",
+                  "rrdFile": "tist_offset.rrd"
+                }
+              },
+              "stringPropertyAttributes": {
+                "digital_gain": "0.800000",
+                "edi_source": "tcp://mux:13000",
+                "ensemble_eid": "49622",
+                "ensemble_label": "Solent Uni",
+                "gainmode": "var"
+              },
+              "typeLabel": "SNMP Node Data"
+            }
+          },
+          "datasource": {
+            "type": "opennms-performance-datasource",
+            "uid": "a1e696f9-1885-4e78-a829-2e2379ee0aa5"
+          },
+          "performanceType": {
+            "label": "Attribute",
+            "value": 1
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "DAB Mod",
+  "version": 1,
+  "weekStart": ""
+}
