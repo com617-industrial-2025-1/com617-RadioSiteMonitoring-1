@@ -1,0 +1,64 @@
+<xml-groups>
+ <!--
+        DAB mux performance 
+{
+  "timestamp": "2026-03-20T23:33:54.613967+00:00",
+  "source": "dab_mux",
+  "stats": {
+    "service": "ODR-DabMux  MGMT Server",
+    "inputs": {
+      "sub-03": {
+        "max_fill": 9984,
+        "min_fill": 8256,
+        "num_underruns": 72,
+        "num_overruns": 0,
+        "peak_left": -9,
+        "peak_right": -9,
+        "state": "Streaming (4)",
+        "uptime": 5861
+      },
+      "sub-02": {
+        "max_fill": 4800,
+        "min_fill": 3840,
+        "num_underruns": 69,
+        "num_overruns": 1,
+        "peak_left": -3,
+        "peak_right": -3,
+        "state": "Streaming (4)",
+        "uptime": 5861
+      },
+      "sub-01": {
+        "max_fill": 6336,
+        "min_fill": 4800,
+        "num_underruns": 45,
+        "num_overruns": 1,
+        "peak_left": -2,
+        "peak_right": -1,
+        "state": "Streaming (4)",
+        "uptime": 5861
+      }
+    },
+    "outputs": {
+      "edi_tcp_13000": {
+        "num_connections": 1
+      }
+    }
+  }
+}
+    -->
+
+    <xml-group name="stats_odr_dab_mux" resource-type="node"  resource-xpath="/stats">
+<!--             <xml-object name="num_modulator_restarts" type="COUNTER" xpath="num_modulator_restarts"/> -->
+<!--             <xml-object name="most_recent_edi_decoded" type="GAUGE" xpath="most_recent_edi_decoded"/> -->
+<!--             <xml-object name="edi_source" type="STRING" xpath="edi_source"/> -->
+<!--             <xml-object name="running_since" type="COUNTER" xpath="running_since"/> -->
+<!--             <xml-object name="ensemble_label" type="STRING" xpath="ensemble_label"/> -->
+<!--             <xml-object name="ensemble_eid" type="STRING" xpath="ensemble_eid"/> -->
+<!--             <xml-object name="num_services" type="GAUGE" xpath="num_services"/> -->
+<!--             <xml-object name="digital_gain" type="STRING" xpath="digital_gain"/> -->
+<!--             <xml-object name="gainmode" type="STRING" xpath="gainmode"/> -->
+<!--             <xml-object name="iq_samplerate" type="GAUGE" xpath="iq_samplerate"/> -->
+<!--             <xml-object name="tist_offset" type="GAUGE" xpath="tist_offset"/> -->
+     </xml-group>
+
+</xml-groups>
