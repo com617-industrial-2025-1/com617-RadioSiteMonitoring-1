@@ -22,7 +22,7 @@
 
     <xml-group name="stats_odr_dab_mod" resource-type="node"  resource-xpath="/stats">
             <xml-object name="num_modulator_restarts" type="COUNTER" xpath="num_modulator_restarts"/>
-            <xml-object name="most_recent_edi_decoded" type="GUAGE" xpath="most_recent_edi_decoded"/>
+            <xml-object name="most_recent_edi_decoded" type="GAUGE" xpath="most_recent_edi_decoded"/>
             <xml-object name="edi_source" type="STRING" xpath="edi_source"/>
             <xml-object name="running_since" type="STRING" xpath="running_since"/>
             <xml-object name="ensemble_label" type="STRING" xpath="ensemble_label"/>
