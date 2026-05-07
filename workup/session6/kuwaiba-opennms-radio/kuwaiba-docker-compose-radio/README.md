@@ -19,7 +19,7 @@ The network devices are simulated using snmpsim containers and four minions scan
 
 ## Brief Description
 
-(See [ADDITIONAL_NOTES](../ADDITIONAL_NOTES.md) for discussion of ODR DAB monitoring)
+(See [ADDITIONAL_NOTES](./ADDITIONAL_NOTES.md) for discussion of ODR DAB monitoring)
 
 This docker compose project contains a Kuwaiba test project which uses the standard [kuwaiba 2.1.1 container](https://hub.docker.com/r/neotropic/kuwaiba).
 
