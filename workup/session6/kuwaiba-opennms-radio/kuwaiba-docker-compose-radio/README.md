@@ -18,6 +18,9 @@ The network devices are simulated using snmpsim containers and four minions scan
 ![alt text](./images/radioNetworkSimulation1.png "Figure radioNetworkSimulation1.png")
 
 ## Brief Description
+
+(See [ADDITIONAL_NOTES](../ADDITIONAL_NOTES.md) for discussion of ODR DAB monitoring)
+
 This docker compose project contains a Kuwaiba test project which uses the standard [kuwaiba 2.1.1 container](https://hub.docker.com/r/neotropic/kuwaiba).
 
 The project demonstrates modelling a small broadcast radio network.
