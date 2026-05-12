@@ -63,18 +63,43 @@ All containers communicate over the internal Docker bridge network `dab_net`.
 
 ---
 
+## Quick Start Scripts
+
+A set of convenience scripts are provided to simplify building and running the stack.
+First, make them executable (only needed once):
+
+```bash
+chmod +x *.sh
+```
+
+> **Note:** Only run one mode at a time. Always stop the stack before switching between modes.
+
+---
+
 ## Building the Stack
 
 > Run all commands from the project root directory.
 
 ### Mode A — Software Only
 
+Using the script:
+```bash
+./build_mode_a.sh
+```
+
+Or manually:
 ```bash
 docker compose -f docker-compose.yml -f docker-compose_mode_a.yml build
 ```
 
 ### Mode B — USRP Live RF
 
+Using the script:
+```bash
+./build_mode_b.sh
+```
+
+Or manually:
 ```bash
 docker compose -f docker-compose.yml -f docker-compose_mode_b.yml build
 ```
@@ -89,12 +114,24 @@ docker compose -f docker-compose.yml -f docker-compose_mode_b.yml build
 
 ### Mode A
 
+Using the script:
+```bash
+./start_mode_a.sh
+```
+
+Or manually:
 ```bash
 docker compose -f docker-compose.yml -f docker-compose_mode_a.yml up -d
 ```
 
 ### Mode B
 
+Using the script:
+```bash
+./start_mode_b.sh
+```
+
+Or manually:
 ```bash
 docker compose -f docker-compose.yml -f docker-compose_mode_b.yml up -d
 ```
@@ -118,6 +155,13 @@ xxxxxxxxxxxx   collector     dab_collector   Up 2 minutes
 ---
 
 ## Stopping the Stack
+
+Using the script (works regardless of mode):
+```bash
+./stop.sh
+```
+
+Or manually:
 
 ### Mode A
 
@@ -249,13 +293,13 @@ Before adding to OpenNMS, you can test SNMP from the host:
 
 ```bash
 # Walk the standard system OID
-snmpwalk -v2c -c public <collector-ip> 1.3.6.1.2.1.1
+snmpwalk -v2c -c public  1.3.6.1.2.1.1
 
 # Walk the full DAB custom OID subtree
-snmpwalk -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99
+snmpwalk -v2c -c public  .1.3.6.1.4.1.8072.1.3.2.99
 
 # Poll a specific value — e.g. subchannel 1 state (string)
-snmpget -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99.1.1.7
+snmpget -v2c -c public  .1.3.6.1.4.1.8072.1.3.2.99.1.1.7
 ```
 
 ### Saving SNMP Output to a File
@@ -263,13 +307,13 @@ snmpget -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99.1.1.7
 To save a snapshot of all DAB metrics to a file:
 
 ```bash
-snmpwalk -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99 > snmp_output.txt
+snmpwalk -v2c -c public  .1.3.6.1.4.1.8072.1.3.2.99 > snmp_output.txt
 ```
 
 To save with a timestamp in the filename (useful for logging):
 
 ```bash
-snmpwalk -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99 > snmp_output_$(date +%Y%m%d_%H%M%S).txt
+snmpwalk -v2c -c public  .1.3.6.1.4.1.8072.1.3.2.99 > snmp_output_$(date +%Y%m%d_%H%M%S).txt
 ```
 
 To view the saved output:
@@ -346,3 +390,4 @@ populate the cache, then retry.
 **Container IP changed after restart**
 Recreating the stack reassigns IPs. Re-run the `docker inspect` command and
 update the OpenNMS node IP accordingly.
+
