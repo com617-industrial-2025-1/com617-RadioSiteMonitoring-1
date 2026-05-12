@@ -1,8 +1,4 @@
 ; Solent_Test A  —  MODE A: Home / no hardware
-; CHANGED: mux output switched from EDI UDP to EDI TCP to avoid
-; a bug in ODR-DabMod next branch that rejects UDP host 0.0.0.0
-; as a multicast address. TCP is simpler and more reliable in Docker.
-
 general {
     dabmode 1
     nbframes 0
@@ -15,44 +11,50 @@ remotecontrol {
     telnetport 12721
 }
 
+; ─── Ensemble ───────────────────────────────────────────────────────────────
+
 ensemble {
-    id 0xc1d6
-    ecc 0xe1
+    id      0xc1d6
+    ecc     0xe1
     local-time-offset auto
     reconfig-counter hash
-    label "Solent Uni"
+    label      "Solent Uni"
     shortlabel "Slnt Uni"
 }
 
+; ─── Services ───────────────────────────────────────────────────────────────
+
 services {
     srv-01 {
-        id 0xc3ee
+        id  0xc3ee
         ecc 0xe1
-        label "Test Service 1"
-        shortlabel "Test 1"
+        label      "Radio Caroline"
+        shortlabel "Caroline"
         pty 10
         pty-sd static
         language 0x09
     }
     srv-02 {
-        id 0xc1c5
+        id  0xc1c5
         ecc 0xe1
-        label "Test Service 2"
-        shortlabel "Test 2"
+        label      "Flash On Air"
+        shortlabel "Flash"
         pty 10
         pty-sd static
         language 0x09
     }
     srv-03 {
-        id 0xc144
+        id  0xc144
         ecc 0xe1
-        label "Test Service 3"
-        shortlabel "Test 3"
+        label      "XRadio"
+        shortlabel "XRadio"
         pty 13
         pty-sd static
         language 0x09
     }
 }
+
+; ─── Subchannels ────────────────────────────────────────────────────────────
 
 subchannels {
     sub-01 {
@@ -90,6 +92,8 @@ subchannels {
     }
 }
 
+; ─── Components ─────────────────────────────────────────────────────────────
+
 components {
     comp-01 {
         service srv-01
@@ -114,15 +118,18 @@ components {
     }
 }
 
+; ─── Outputs ────────────────────────────────────────────────────────────────
+
 outputs {
     edi {
         destinations {
             edi_tcp {
                 protocol tcp
                 listenport 13000
+                enable_pft true
+                fec 1
             }
         }
     }
-
     throttle "simul://"
 }

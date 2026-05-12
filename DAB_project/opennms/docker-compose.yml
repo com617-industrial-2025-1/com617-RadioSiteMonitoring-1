@@ -1,0 +1,76 @@
+---
+# OpenNMS Horizon + PostgreSQL for DAB project monitoring
+# Joins the existing dab_net so horizon can reach the dab_collector SNMP agent
+#
+# Start:  docker compose up -d
+# Stop:   docker compose down
+# Logs:   docker compose logs -f horizon
+
+networks:
+  dab_net:
+    external: true   # already created by the DAB docker-compose
+
+volumes:
+  data-postgres: {}
+  data-opennms: {}
+  data-opennms-cfg: {}
+
+services:
+
+  database:
+    image: postgres:15
+    container_name: opennms_database
+    hostname: database
+    environment:
+      TZ: Europe/London
+      POSTGRES_HOST: database
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - data-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 30s
+      retries: 3
+    networks:
+      - dab_net
+    restart: unless-stopped
+
+  horizon:
+    image: opennms/horizon:33.1.6
+    container_name: opennms_horizon
+    hostname: horizon
+    sysctls:
+      net.ipv4.ping_group_range: "0 429496729"
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      TZ: Europe/London
+      JAVA_OPTS: -Xmx2048m -XX:MaxMetaspaceSize=512m
+    volumes:
+      - data-opennms:/opennms-data
+      - data-opennms-cfg:/opt/opennms/etc
+      - ./container-fs/horizon/opt/opennms-overlay:/opt/opennms-overlay
+      - ./container-fs/horizon/etc/conf.d/confd.toml:/etc/confd/confd.toml
+    command: ["-s"]
+    ports:
+      - "8980:8980/tcp"    # Web UI  →  http://localhost:8980/opennms  (admin/admin)
+      - "8101:8101/tcp"    # Karaf SSH
+      - "10162:1162/udp"   # SNMP trap receiver
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-I", "http://localhost:8980/opennms/login.jsp"]
+      interval: 1m
+      timeout: 5s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 4G
+    networks:
+      - dab_net
+    restart: unless-stopped
+

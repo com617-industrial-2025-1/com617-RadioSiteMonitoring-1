@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ODR-DAB-MIB.xml
+  ───────────────
+  OpenNMS datacollection group for the ODR-mmbTools DAB stack.
+
+  Deploy to:
+    opennms/container-fs/horizon/opt/opennms-overlay/etc/datacollection/ODR-DAB-MIB.xml
+
+  Referenced by datacollection-config.xml via:
+    <include-collection dataCollectionGroup="ODR-DAB-MIB"/>
+
+  Base OID: .1.3.6.1.4.1.8072.1.3.2.99
+    .99.1.N.x  — MUX subchannels (N = 1,2,3)
+    .99.2.x    — MUX outputs
+    .99.3.x    — Modulator (ODR-DabMod)
+
+  Notes:
+    - Peak levels are stored as dBfs * 100 (integer), divide by 100 for display.
+    - String OIDs (state, labels, etc.) are collected as strings; they are NOT
+      stored in RRD but are useful for status/events in OpenNMS resource graphs.
+    - Counter32 OIDs use type "counter" so OpenNMS computes a rate automatically.
+-->
+<datacollection-group name="ODR-DAB-MIB"
+    xmlns="http://xmlns.opennms.org/xsd/config/datacollection">
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       MIB objects — one <mibObj> per leaf OID
+       ═══════════════════════════════════════════════════════════════════════ -->
+
+  <!-- ── Subchannel 1 (.99.1.1.x) ── -->
+  <resourceType name="odrMuxSubchannel" label="DAB Subchannel" resourceLabel="${index}">
+    <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+    <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+  </resourceType>
+
+  <group name="odr-mux-sub1" ifType="ignore">
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.1" instance="0" alias="sub1MaxFill"    type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.2" instance="0" alias="sub1MinFill"    type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.3" instance="0" alias="sub1Underruns"  type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.4" instance="0" alias="sub1Overruns"   type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.5" instance="0" alias="sub1PeakLeft"   type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.6" instance="0" alias="sub1PeakRight"  type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.7" instance="0" alias="sub1State"      type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.1.8" instance="0" alias="sub1Uptime"     type="gauge"/>
+  </group>
+
+  <!-- ── Subchannel 2 (.99.1.2.x) ── -->
+  <group name="odr-mux-sub2" ifType="ignore">
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.1" instance="0" alias="sub2MaxFill"    type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.2" instance="0" alias="sub2MinFill"    type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.3" instance="0" alias="sub2Underruns"  type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.4" instance="0" alias="sub2Overruns"   type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.5" instance="0" alias="sub2PeakLeft"   type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.6" instance="0" alias="sub2PeakRight"  type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.7" instance="0" alias="sub2State"      type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.2.8" instance="0" alias="sub2Uptime"     type="gauge"/>
+  </group>
+
+  <!-- ── Subchannel 3 (.99.1.3.x) ── -->
+  <group name="odr-mux-sub3" ifType="ignore">
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.1" instance="0" alias="sub3MaxFill"    type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.2" instance="0" alias="sub3MinFill"    type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.3" instance="0" alias="sub3Underruns"  type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.4" instance="0" alias="sub3Overruns"   type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.5" instance="0" alias="sub3PeakLeft"   type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.6" instance="0" alias="sub3PeakRight"  type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.7" instance="0" alias="sub3State"      type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.1.3.8" instance="0" alias="sub3Uptime"     type="gauge"/>
+  </group>
+
+  <!-- ── MUX Outputs (.99.2.x) ── -->
+  <group name="odr-mux-output" ifType="ignore">
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.2.1"   instance="0" alias="ediNumConns"    type="gauge"/>
+  </group>
+
+  <!-- ── Modulator (.99.3.x) ── -->
+  <group name="odr-mod" ifType="ignore">
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.1"   instance="0" alias="modRestarts"    type="counter"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.2"   instance="0" alias="modLastEdi"     type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.3"   instance="0" alias="modEdiSource"   type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.4"   instance="0" alias="modRunningSince" type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.5"   instance="0" alias="modEnsLabel"    type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.6"   instance="0" alias="modEnsEid"      type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.7"   instance="0" alias="modNumServices" type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.8"   instance="0" alias="modDigitalGain" type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.9"   instance="0" alias="modGainMode"    type="string"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.10"  instance="0" alias="modIqSampleRate" type="gauge"/>
+    <mibObj oid=".1.3.6.1.4.1.8072.1.3.2.99.3.11"  instance="0" alias="modTistOffset"  type="string"/>
+  </group>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       System definition — binds groups to the dab_collector node
+       Matched by sysObjectID or by manually assigning the node to this group.
+       Using .1.3.6.1.4.1.8072 (NET-SNMP) as the sysObjectID root since
+       the collector runs snmpd.
+       ═══════════════════════════════════════════════════════════════════════ -->
+
+  <systemDef name="ODR-DAB-Collector">
+    <sysoidMask>.1.3.6.1.4.1.8072.</sysoidMask>
+    <collect>
+      <includeGroup>odr-mux-sub1</includeGroup>
+      <includeGroup>odr-mux-sub2</includeGroup>
+      <includeGroup>odr-mux-sub3</includeGroup>
+      <includeGroup>odr-mux-output</includeGroup>
+      <includeGroup>odr-mod</includeGroup>
+    </collect>
+  </systemDef>
+
+</datacollection-group>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datacollection-config xmlns="http://xmlns.opennms.org/xsd/config/datacollection"
+                       rrdRepository="/opt/opennms/share/rrd/snmp/">
+
+  <snmp-collection name="default" snmpStorageFlag="select">
+    <rrd step="60">
+      <rra>RRA:AVERAGE:0.5:1:2016</rra>
+      <rra>RRA:AVERAGE:0.5:5:1488</rra>
+      <rra>RRA:AVERAGE:0.5:60:366</rra>
+      <rra>RRA:MAX:0.5:60:366</rra>
+      <rra>RRA:MIN:0.5:60:366</rra>
+    </rrd>
+    <include-collection dataCollectionGroup="ODR-DAB-MIB"/>
+    <include-collection dataCollectionGroup="MIB2"/>
+  </snmp-collection>
+
+  <snmp-collection name="dab" snmpStorageFlag="all">
+    <rrd step="60">
+      <rra>RRA:AVERAGE:0.5:1:2016</rra>
+      <rra>RRA:AVERAGE:0.5:5:1488</rra>
+      <rra>RRA:AVERAGE:0.5:60:366</rra>
+      <rra>RRA:MAX:0.5:60:366</rra>
+      <rra>RRA:MIN:0.5:60:366</rra>
+    </rrd>
+    <include-collection dataCollectionGroup="ODR-DAB-MIB"/>
+    <include-collection dataCollectionGroup="MIB2"/>
+  </snmp-collection>
+
+</datacollection-config>
