@@ -258,6 +258,28 @@ snmpwalk -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99
 snmpget -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99.1.1.7
 ```
 
+### Saving SNMP Output to a File
+
+To save a snapshot of all DAB metrics to a file:
+
+```bash
+snmpwalk -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99 > snmp_output.txt
+```
+
+To save with a timestamp in the filename (useful for logging):
+
+```bash
+snmpwalk -v2c -c public <collector-ip> .1.3.6.1.4.1.8072.1.3.2.99 > snmp_output_$(date +%Y%m%d_%H%M%S).txt
+```
+
+To view the saved output:
+
+```bash
+cat snmp_output.txt
+```
+
+> **Note:** Run these commands from the host machine, not from inside a container.
+
 ### Custom SNMP OID Tree
 
 All DAB stats are exposed under:
