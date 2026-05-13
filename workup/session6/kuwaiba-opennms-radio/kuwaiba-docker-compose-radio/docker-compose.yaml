@@ -655,20 +655,42 @@ services:
       testradiosite1:
         ipv4_address: 192.168.105.103
 
+  # this is for rest data collection
   DABMux:
-      image: ${DOCKER_REGISTRY:-docker.io}/nginx:${NGINX_VERSION:-1.23-alpine}
-      container_name: DABMux
-      hostname: DABMux
-      restart: unless-stopped
-      volumes:
-        - ./container-fs/DABmux/conf.d:/etc/nginx/conf.d
-        - ./container-fs/DABmux/html/index.html:/usr/share/nginx/html/index.html
-        - ./container-fs/DABmux/html/stats_mod.json:/usr/share/nginx/html/stats_mod.json
-        - ./container-fs/DABmux/html/stats_mux.json:/usr/share/nginx/html/stats_mux.json
-        - ./container-fs/DABmux/html/health.json:/usr/share/nginx/html/health.json
-      ports:
+    profiles: [opennms]
+    image: ${DOCKER_REGISTRY:-docker.io}/nginx:${NGINX_VERSION:-1.23-alpine}
+    container_name: DABMux
+    hostname: DABMux
+    restart: unless-stopped
+    volumes:
+      - ./container-fs/DABmux/conf.d:/etc/nginx/conf.d
+      - ./container-fs/DABmux/html/index.html:/usr/share/nginx/html/index.html
+      - ./container-fs/DABmux/html/stats_mod.json:/usr/share/nginx/html/stats_mod.json
+      - ./container-fs/DABmux/html/stats_mux.json:/usr/share/nginx/html/stats_mux.json
+      - ./container-fs/DABmux/html/health.json:/usr/share/nginx/html/health.json
+    ports:
         - "8082:80"
-      networks:
+    networks:
         testradiosite1:
           ipv4_address: 192.168.105.106
-        
+          
+# this is for SNMP data collection for dab mux
+  DABMuxSNMP:
+    profiles: [opennms]
+#    image: ${DOCKER_REGISTRY:-docker.io}/tandrup/snmpsim:${SNMPSIM_VERSION:-v0.4}
+    image: onms-training/snmpsim
+#    build: ./container-fs/snmpsim/
+    container_name: DABMuxSNMP
+    hostname: DABMuxSNMP
+    environment:
+      EXTRA_FLAGS: "--v3-user=testing --v3-auth-key=testing123"
+    volumes:
+      - ./container-fs/snmpsim/data/ODR-DAB.snmprec:/usr/local/snmpsim/data/public.snmprec
+
+      # mibs folder so we can compile mibs if needed
+      - ./container-fs/snmpsim/mibs:/usr/local/snmpsim/mibs
+    ports:
+      - "13661:161/udp"
+    networks:
+      testradiosite1:
+        ipv4_address: 192.168.105.108

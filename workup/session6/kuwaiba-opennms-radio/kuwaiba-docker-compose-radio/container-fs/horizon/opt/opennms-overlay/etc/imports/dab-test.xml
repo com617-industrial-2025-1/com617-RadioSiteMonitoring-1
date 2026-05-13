@@ -19,4 +19,10 @@
          <monitored-service service-name="ICMP"/>
       </interface>
    </node>
+   <node location="crabwoodFarm1" foreign-id="DABMuxSNMP" node-label="DABMuxSNMP">
+      <interface ip-addr="192.168.105.108" status="1" snmp-primary="P">
+         <monitored-service service-name="SNMP"/>
+         <monitored-service service-name="ICMP"/>
+      </interface>
+   </node>
 </model-import>

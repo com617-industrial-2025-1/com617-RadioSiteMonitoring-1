@@ -14,6 +14,7 @@
       <include-collection dataCollectionGroup="DB8008-MIB"/>
       <include-collection dataCollectionGroup="DB9000RX-MIB"/>
       <include-collection dataCollectionGroup="PT3070-MIB"/>
+      <include-collection dataCollectionGroup="ODR-DAB-MIB"/>
 
       <include-collection dataCollectionGroup="MIB2"/>
       <include-collection dataCollectionGroup="3Com"/>
