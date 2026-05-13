@@ -16,11 +16,11 @@ services:
         condition: service_started
     command: >
       sh -c "
-        odr-audioenc -v http://sc6.radiocaroline.net:8040 -c 2 -r 32000 -b 64 -e tcp://mux:10001 &
+        odr-audioenc -v http://sc6.radiocaroline.net:8040 -c 2 -r 48000 -b 64 -e tcp://mux:10001 &
         sleep 1 &&
-        odr-audioenc -v http://studio.theflashonair.co.uk:8000/1.mp3 -c 2 -r 32000 -b 64 -e tcp://mux:10002 &
+        odr-audioenc -v http://studio.theflashonair.co.uk:8000/1.mp3 -c 2 -r 48000 -b 64 -e tcp://mux:10002 &
         sleep 1 &&
-        odr-audioenc -v http://s2.xrad.io:8522 -c 1 -r 32000 -b 64 -e tcp://mux:10003 &
+        odr-audioenc -v http://s2.xrad.io:8522 -c 1 -r 48000 -b 64 -e tcp://mux:10003 &
         wait
       "
 
