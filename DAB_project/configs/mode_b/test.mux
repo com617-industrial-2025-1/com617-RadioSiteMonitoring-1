@@ -2,16 +2,14 @@
 general {
     dabmode 1
     nbframes 0
-    syslog true
-    tist false          ; disabled — DabMod has mutenotimestamps=1 / synchronous=0
+    syslog false
+    tist false
     managementport 12720
 }
 
 remotecontrol {
     telnetport 12721
 }
-
-; ─── Ensemble ───────────────────────────────────────────────────────────────
 
 ensemble {
     id      0xc1d7
@@ -21,8 +19,6 @@ ensemble {
     label      "Solent Demo"
     shortlabel "Slnt Dem"
 }
-
-; ─── Services ───────────────────────────────────────────────────────────────
 
 services {
     srv-01 {
@@ -53,8 +49,6 @@ services {
         language 0x09
     }
 }
-
-; ─── Subchannels ────────────────────────────────────────────────────────────
 
 subchannels {
     sub-01 {
@@ -92,8 +86,6 @@ subchannels {
     }
 }
 
-; ─── Components ─────────────────────────────────────────────────────────────
-
 components {
     comp-01 {
         service srv-01
@@ -118,8 +110,6 @@ components {
     }
 }
 
-; ─── Outputs ────────────────────────────────────────────────────────────────
-
 outputs {
     edi {
         destinations {
@@ -131,72 +121,4 @@ outputs {
             }
         }
     }
-}        buffer-management prebuffering
-        buffer 40
-        prebuffering 20
-    }
-    sub-02 {
-        type dabplus
-        bitrate 64
-        id 2
-        protection 3
-        inputproto edi
-        inputuri "tcp://:10002"
-        buffer-management prebuffering
-        buffer 40
-        prebuffering 20
-    }
-    sub-03 {
-        type dabplus
-        bitrate 64
-        id 3
-        protection 3
-        inputproto edi
-        inputuri "tcp://:10003"
-        buffer-management prebuffering
-        buffer 80
-        prebuffering 40
-    }
-}
-
-; ─── Components ─────────────────────────────────────────────────────────────
-
-components {
-    comp-01 {
-        service srv-01
-        subchannel sub-01
-        user-applications {
-            userapp "slideshow"
-        }
-    }
-    comp-02 {
-        service srv-02
-        subchannel sub-02
-        user-applications {
-            userapp "slideshow"
-        }
-    }
-    comp-03 {
-        service srv-03
-        subchannel sub-03
-        user-applications {
-            userapp "slideshow"
-        }
-    }
-}
-
-; ─── Outputs ────────────────────────────────────────────────────────────────
-
-outputs {
-    edi {
-        destinations {
-            edi_tcp {
-                protocol tcp
-                listenport 13000
-                enable_pft true
-                fec 1
-            }
-        }
-    }
-    throttle "simul://"
 }
