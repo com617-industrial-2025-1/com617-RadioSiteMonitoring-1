@@ -2,14 +2,16 @@
 general {
     dabmode 1
     nbframes 0
-    syslog false
-    tist false
+    syslog true
+    tist true
     managementport 12720
 }
 
 remotecontrol {
     telnetport 12721
 }
+
+; ─── Ensemble ───────────────────────────────────────────────────────────────
 
 ensemble {
     id      0xc1d7
@@ -19,6 +21,8 @@ ensemble {
     label      "Solent Demo"
     shortlabel "Slnt Dem"
 }
+
+; ─── Services ───────────────────────────────────────────────────────────────
 
 services {
     srv-01 {
@@ -49,6 +53,8 @@ services {
         language 0x09
     }
 }
+
+; ─── Subchannels ────────────────────────────────────────────────────────────
 
 subchannels {
     sub-01 {
@@ -86,6 +92,8 @@ subchannels {
     }
 }
 
+; ─── Components ─────────────────────────────────────────────────────────────
+
 components {
     comp-01 {
         service srv-01
@@ -110,6 +118,8 @@ components {
     }
 }
 
+; ─── Outputs ────────────────────────────────────────────────────────────────
+
 outputs {
     edi {
         destinations {
@@ -121,4 +131,5 @@ outputs {
             }
         }
     }
+    throttle "simul://"
 }
