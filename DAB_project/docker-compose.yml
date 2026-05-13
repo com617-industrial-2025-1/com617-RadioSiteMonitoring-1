@@ -64,4 +64,4 @@ services:
       mod:
         condition: service_started
     ports:
-      - "127.0.0.1:161:161/udp"   # SNMP - polled by OpenNMS on dab_net
+      - "1161:161/udp"   # SNMP - polled by OpenNMS on dab_net
