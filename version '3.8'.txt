@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: opennms
+      POSTGRES_USER: opennms
+      POSTGRES_PASSWORD: opennms123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  opennms:
+    image: opennms/opennms:31-stable
+    depends_on:
+      - postgres
+    environment:
+      INSTALL_OPENNMS_JDBC_URL: jdbc:postgresql://postgres:5432/opennms
+      INSTALL_OPENNMS_JDBC_DRIVER: org.postgresql.Driver
+      INSTALL_OPENNMS_DB_USER: opennms
+      INSTALL_OPENNMS_DB_PASS: opennms123
+    volumes:
+      - opennms-data:/opt/opennms/etc
+      - opennms-logs:/opt/opennms/logs
+    ports:
+      - "8980:8980"
+      - "1162:1162"
+
+  grafana:
+    image: grafana/grafana:latest
+    depends_on:
+      - postgres
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin123
+    volumes:
+      - grafana-data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres_data:
+  opennms-data:
+  opennms-logs:
+  grafana-data:
